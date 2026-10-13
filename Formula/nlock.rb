@@ -1,26 +1,26 @@
 class Nlock < Formula
   desc "Run commands while holding named locks"
   homepage "https://github.com/erietz/nlock"
-  version "0.1.1"
+  version "0.1.3"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/erietz/nlock/releases/download/v0.1.1/nlock-macos-aarch64.tar.gz"
-      sha256 "966f52c0c8de8bd3f8265709dce08cdae0702980afe85f5d5fab49d04f9d4239"
+      url "https://github.com/erietz/nlock/releases/download/v0.1.3/nlock-macos-aarch64.tar.gz"
+      sha256 "1d04d2ecd2db8fa3133ce1a5b9d6a1d6adb8dbdbed6bd73b8acfe8063c471d8d"
     elsif Hardware::CPU.intel?
-      url "https://github.com/erietz/nlock/releases/download/v0.1.1/nlock-macos-x86_64.tar.gz"
-      sha256 "0ea704cc4a89c6ddda09e20b671bfd514dc2fa41fdb4d32fe9f0d58b7d04cb02"
+      url "https://github.com/erietz/nlock/releases/download/v0.1.3/nlock-macos-x86_64.tar.gz"
+      sha256 "7d140915546afb7a4c09583e28be14210305358bb39fdab7f89d7ad246b54482"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/erietz/nlock/releases/download/v0.1.1/nlock-linux-aarch64.tar.gz"
-      sha256 "614207ea7833cd0152ff23eefabb36a3ea1e51fd6e2bdbd6f6552b8964dcf116"
+      url "https://github.com/erietz/nlock/releases/download/v0.1.3/nlock-linux-aarch64.tar.gz"
+      sha256 "ff41b1b561a49404ffc2898ca36c7a3860bb0b702cda56eb63f32b208ea8e71d"
     elsif Hardware::CPU.intel?
-      url "https://github.com/erietz/nlock/releases/download/v0.1.1/nlock-linux-x86_64.tar.gz"
-      sha256 "a950cf36b46c93a6e239f709fd1f5143f5c7d83060b8cafd041c8328e86734a7"
+      url "https://github.com/erietz/nlock/releases/download/v0.1.3/nlock-linux-x86_64.tar.gz"
+      sha256 "4e3ff8b8aaf3a96455cefe212172bdffd7e19cd21abfa4b391d9d5eb52f8fe4a"
     end
   end
 
